@@ -46,7 +46,7 @@ int Even(int n) {
 	int i, total = 0; 
 	for (i = 1; i <= n; i++) 
 		if (i % 2 == 0) 
-			total = total + 1; 
+			total = total + i; 
 	return total;
 	
 
