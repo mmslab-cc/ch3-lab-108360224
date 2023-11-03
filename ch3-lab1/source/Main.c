@@ -3,20 +3,26 @@
 #include <string.h>
 
 // 在這裡撰寫宣告函式
-
+int Odd(int);
+int Even(int);
+int TotalSum(int);
 int main(void)
 {
 	int n, sum; 
 	char choice;
 	printf("1+2+...+n=?請輸入n=\n");
+	scanf("%d", &n);
 	printf("請問要做奇數和(O),偶數和(E),還是整數和(I)?請選擇:\n");
 	scanf(" %c", &choice);
 	switch (choice) {
-	case 'O': sum = Odd(n); 
+	case 'O': 
+		sum = Odd(n); 
 		break; 
-	case 'E': sum = Even(n); 
+	case 'E': 
+		sum = Even(n); 
 		break; 
-	case 'I': sum = TotalSum(n); 
+	case 'I': 
+		sum = TotalSum(n); 
 		break; 
 	default: 
 		printf("選擇錯誤\n"); 
